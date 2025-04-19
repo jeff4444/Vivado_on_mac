@@ -26,9 +26,9 @@ On M‑series Macs you have two main virtualization options:
    - **Parallels:**
     - Run a Windows VM (Pretty straight forward when you open up Parallels)
    - **UTM:**
-    - Attach a Windows 11 ARM ISO (download from Microsoft’s website).
-    - Allocate at least 4 CPU cores, 8 GB RAM, and 100GB of storage for smooth Vivado performance and enough space to run Vivado.
-    - This might take a while, so maybe grab a cup of coffee :)
+        - Attach a Windows 11 ARM ISO (download from Microsoft’s website).
+        - Allocate at least 4 CPU cores, 8 GB RAM, and 100GB of storage for smooth Vivado performance and enough space to run Vivado.
+        - This might take a while, so maybe grab a cup of coffee :)
 
 ## Step 2: Download and Install Vivado
 
@@ -62,7 +62,7 @@ To fix the error above, we need to download the latest MS Visual C++ Redistribut
 
 ## Step 4: Download Diligent Adept Runtime
 
-When you plug in your Basys3 board (this is what I used, maybe other FPGA boards may need another work around, or not), it doesn't pop up in the Hardware Manager 
+When you plug in your Basys3 board (this is what I used, maybe other FPGA boards may need another work arounds, or not), it doesn't pop up in the Hardware Manager 
 ![No Connected Hardware](/assets/no_hardware_target.png)
 To resolve this, you need to download the [Diligent Adept Runtime](https://digilent.com/reference/software/adept/start?redirect=1#software_downloads)
 
