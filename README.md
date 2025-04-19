@@ -1,12 +1,12 @@
 # How to get Vivado running on your M series MacBook (or Windows on ARM)
 
-## Background
-
 This guide documents the exact steps I followed to get Vivado running on an Apple Silicon (M3 Pro) MacBook by installing a Windows ARM environment. The goal is to provide a clear, copy‑and‑pasteable procedure so that anyone without a native Windows PC, or with a Windows on ARM PC can set up the Vivado Design Suite successfully.
+
+## Background
 
 Vivado is not supported natively on ARM-based systems, as Xilinx only provides Windows (x86) installers. To run Vivado on Apple Silicon (M-series) Macs or Windows on ARM laptops, a virtualized Windows environment is required.
 
-During my Digital Systems course, many classmates using Macs were forced to purchase separate Windows laptops to complete FPGA assignments—an expensive requirement. This documentation aims to help fellow Mac users run Vivado on their machines without the extra hardware cost.
+During my Digital Systems course, many classmates using Macs were forced to purchase separate Windows laptops to complete FPGA assignments—an expensive requirement. This documentation aims to help fellow Mac users run Vivado on their machines without much of the extra hardware cost.
 
 > **Note:** If you already own a native Windows PC or laptop, you may prefer to use it directly for maximum stability. While the virtualization approach worked reliably during testing, some users have reported occasional simulation crashes.
 
