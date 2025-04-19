@@ -4,6 +4,15 @@
 
 This guide documents the exact steps I followed to get Vivado running on an Apple Silicon (M3 Pro) MacBook by installing a Windows ARM environment. The goal is to provide a clear, copy‑and‑pasteable procedure so that anyone without a native Windows PC, or with a Windows on ARM PC can set up the Vivado Design Suite successfully.
 
+```
+Vivado is not supported natively on ARM-based systems, as Xilinx only provides Windows (x86) installers. To run Vivado on Apple Silicon (M-series) Macs or Windows on ARM laptops, a virtualized Windows environment is required.
+
+During my Digital Systems course, many classmates using Macs were forced to purchase separate Windows laptops to complete FPGA assignments—an expensive requirement. This documentation aims to help fellow Mac users run Vivado on their machines without the extra hardware cost.
+
+> **Note:** If you already own a native Windows PC or laptop, you may prefer to use it directly for maximum stability. While the virtualization approach worked reliably during testing, some users have reported occasional simulation crashes.
+```
+
+
 ## Step 1: Install Parallels (or UTM)
 
 On M‑series Macs you have two main virtualization options:
@@ -24,7 +33,7 @@ On M‑series Macs you have two main virtualization options:
 2. Install the app as you would any macOS application.
 3. Launch it and create a new virtual machine:
    - **Parallels:**
-    - Run a Windows VM (Pretty straight forward when you open up Parallels)
+        - Run a Windows VM (Pretty straight forward when you open up Parallels)
    - **UTM:**
         - Attach a Windows 11 ARM ISO (download from Microsoft’s website).
         - Allocate at least 4 CPU cores, 8 GB RAM, and 100GB of storage for smooth Vivado performance and enough space to run Vivado.
@@ -70,4 +79,4 @@ To resolve this, you need to download the [Diligent Adept Runtime](https://digil
 2. Download the Windows installer (Adept Runtime for Windows Download).
 3. Run the installer, accept defaults, and complete the installation.
 4. After installation, connect your Basys3 board; Open Vivado and try autoconnecting again, this time, your FPGA should show up! 
-5. HURRAY!!! Now you have Vivado running on your Mac
+5. HURRAY!!! Now you have Vivado running on your Mac!
